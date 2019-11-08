@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="login.css">
+        <script type="text/javascript">
+            function validate(){
+    var a = document.getElementById("uname1");
+    if(a.value=="" || b.value=="" ){
+        alert("This Filed cannot be empty");
+    }
+    else{
+    }
+}
+
+function validate2(){
+     var c = document.getElementById("uname");
+    if(c.value==""){
+        alert("Username Required");
+    }
+    else{
+        
+    }
+    var d = document.getElementById("pass");
+    if(d.value==""){
+        alert("Password Required");
+    }
+    else{
+        
+    }
+    var e = document.getElementById("email");
+    if(e.value==""){
+        alert("Email Required");
+    }
+    else{
+        
+    }
+}
+        </script>
+        <style type="text/css">
+            #p1
+    {
+      color: #D4AF37;
+      text-align: center;
+      text-shadow: 50px blue;
+      padding-top:20px; 
+    }
+        </style>
+    </head>
+    <body class="container">
+        <div class="row" >
+   <P><h2 id="p1" style="background-color:#0C0706; height:50px; width: 100%">HAVAVH SHOPING CART</h2></P>
+  </div>
+        <div class="img" style="background-image: url('img1.jpg');">
+        <div class="login-page">
+            <div class="form">
+                <form class="register-form" onsubmit="validate2()">
+                    <input id="uname" type="text"  placeholder="User Name"><br><br>
+                    <input type="password" id="pass" placeholder="Password"><br><br>
+                    <input type="text" id="email" placeholder="Email"><br><br>
+                    <a href="HOME PAGE.html">
+                    <button type="submit" >Register</button>
+                    
+                    <p class="message">Already Registered?<a href="#">Login</a></p>
+                </form>
+                <form class="login-form">
+                    <input type="text" id="uname1" placeholder="User Name"/>
+                    <input type="password" id="pass1" placeholder="Password"/>
+                    <a href="HOME PAGE.html">
+                    <button type="submit" onclick="validate()" >Login</button>
+                    
+                    <p class="message">Not Registered?<a href="#">Register</a></p>
+                </form>
+                
+                
+            </div>
+        
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        
+        <script>
+            $('.message a').click(function(){
+                $('form').animate({height: "toggle", opacity: "toggle"},"slow");
+            });
+        </script>
+        
+    </body>
+</html>

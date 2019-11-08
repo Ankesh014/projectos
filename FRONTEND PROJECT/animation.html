@@ -1,0 +1,38 @@
+
+<HTML>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(
+function(){
+$("img").click(
+function(){
+$("#d1").animate(
+{
+left:'200px'
+});$("#d2").animate(
+{
+right:'400px'
+});$("#d3").animate(
+{
+top:'600px'
+});
+$("#d4").animate(
+{
+bottom:'800px',
+
+});
+});
+});
+
+
+</script>
+</head>
+<body><button>start animation</button><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+<div id="d1" style="position:relative; background-color:red; height:100px; width:100px "></div>
+<div id="d2" style="position:relative; background-color:blue; height:100px; width:100px; margin:-100px 0px 100px 0px  "></div>
+<div id="d3" style="position:relative; background-color:green; height:100px; width:100px; margin:-200px 0px 100px 0px  "></div>
+<div id="d4" style="position:relative; background-color:white; height:100px; width:100px; margin:-200px 0px 100px 0px "></div>
+</center>
+</body>
+</HTML>

@@ -1,0 +1,187 @@
+<html>
+<head>
+  <title>HOME</title>
+  <style type="text/css">
+
+    #r1
+    {
+      
+      
+    }
+    #h1:hover
+    {
+      display: block;
+      background-color: grey;
+    }
+    #p1
+    {
+      color: #D4AF37;
+      text-align: center;
+      text-shadow: 50px blue;
+
+    }
+     .cont{
+
+            border: 2px solid black;
+            height:307px;
+            overflow:hidden;
+        }
+
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: skyblue;}
+
+  </style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script>src="jquery.js"</script>
+  
+</head>
+<body class="container">
+
+   <div class="row" >
+   <P><h2 id="p1" style="background-color:#0C0706; height:50px; width: 100%">HAVAVH SHOPING CART</h2></P>
+  </div>
+<hr>
+<div class="row">
+  <div class="col-sm-2">
+      <button type="button" style="width: 150px" class="btn btn-info"><a href="HOME PAGE.html"></a> HOME</button></div>
+    <div class="col-sm-2">
+      <div class="dropdown">
+      <button type="button" style="width: 150px" class="btn btn-info">MEN</button>
+      <div class="dropdown-content">
+        <a href="shoes example page.html"> <P><H3>SHOES</H3></P>
+</a>
+    <a href="SHIRTS.html"><P ><H3>SHIRTS</H3></P>
+</a>
+    <a href="JIENS.html"><P> <H3>JIENS</H3></P>
+</a>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-2"><a href="Women.html">
+      <button type="button" style="width: 150px" class="btn btn-info">WOMEN</button>
+      </div>
+  
+    <div class="col-sm-2"><a href="ELECTRONIC.html">
+      <button type="button" style="width: 150px" class="btn btn-info">ELECTRONIC</button>
+</div>
+    <div class="col-sm-2">
+     <a href="login.html">
+      <button type="button" style="width: 150px" class="btn btn-info">LOGIN</button></div>
+   
+    <div class="col-sm-2"><button type="button" style="width: 150px" class="btn btn-info">CART</button>
+  </div>
+
+    
+  </div><hr>
+  <br>
+  <div class="row">
+    <div id="imgGallary" class="cont">
+    <img src="p1.jpg" class="img-thumbnail" class="img-thumbnail" height="300" />
+    <img src="p2.jpg" class="img-thumbnail"   />
+    <img src="p3.jpg" class="img-thumbnail"  />
+    <img src="p4.jpg"  class="img-thumbnail" />
+</div></div>
+<script>
+(function(){
+        var imgLen = document.getElementById('imgGallary');
+        var images = imgLen.getElementsByTagName('img');
+        var counter = 1;
+
+        if(counter <= images.length){
+            setInterval(function(){
+                images[0].src = images[counter].src;
+                console.log(images[counter].src);
+                counter++;
+
+                if(counter === images.length){
+                    counter = 1;
+                }
+            },4000);
+        }
+})();
+</script>
+<br>
+<div class="row">
+  <div class="col-sm-12" style="background-color:;">
+    <img src="t2.jpg" >
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3" style="background-color:;">
+    <img src="a1.jpg" class="img-thumbnail" >
+    </div>
+    <div class="col-sm-3" style="background-color:;">
+    <img src="a2.jpg" class="img-thumbnail" >
+    </div>
+    <div class="col-sm-3" style="background-color:;">
+    <img src="a3.jpg" class="img-thumbnail" >
+    </div>
+    <div class="col-sm-3" style="background-color:;">
+    <img src="a4.jpg" class="img-thumbnail" >
+    </div>
+</div><br>
+ 
+<div class="row">
+    <div class="col-sm-3" style="background-color:;">
+    <img src="a5.jpg" class="img-thumbnail" >
+    </div>
+    <div class="col-sm-3" style="background-color:;">
+    <img src="a6.jpg" class="img-thumbnail" >
+    </div>
+    <div class="col-sm-3" style="background-color:;">
+    <img src="a7.jpg" class="img-thumbnail" >
+    </div>
+    <div class="col-sm-3" style="background-color:;">
+    <img src="a8.jpg" class="img-thumbnail" >
+    </div>
+</div><br>
+<div class="row">
+<div class="col-sm-12" style="background-color:;">
+    <img src="t1.jpg" ></div>
+</div> 
+<div class="row">
+    <div class="col-sm-6" style="">
+    <img src="a9.jpg" class="img-round"  height="315px" >
+    <img src="a9x.jpg" class="img-round" height="315px" >
+    </div>
+    <div class="col-sm-6" style="background-color:;">
+    <img src="a10.jpg" class="img-thumbnail" >
+    <img src="a11.jpg" class="img-thumbnail" >
+    </div>
+</div><br><br><br>
+<div class="row ">
+  <div col-sm-3>
+    <img src="x1.png" style="padding-left:35px">
+  </div>
+</div>
+</body>
+</html>
